@@ -1,0 +1,49 @@
+/* frontend/src/components/SimpleScreen.css */
+
+.simple-screen {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.simple-screen-left, .simple-screen-right {
+    padding: 20px;
+}
+
+.simple-screen-left {
+    flex: 60%; /* 60% width */
+    background-color: white; /* Background color */
+    padding: 20px; /* Add padding */
+}
+
+.simple-screen-right {
+    flex: 40%; /* 40% width */
+    background-color: white; /* Background color */
+    padding: 20px; /* Add padding */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    padding-right: 90px; /* Increase padding to push the image further */
+}
+
+.simple-screen-left h1,
+.simple-screen-left p {
+    color: black;
+}
+
+/* Increase the font size of h1 elements */
+.simple-screen-left h1 {
+    font-size: 3em; /* Adjust font size as needed */
+}
+
+/* Optional: Adjust font size of p elements for consistency */
+.simple-screen-left p {
+    font-size: 1.5em; /* Adjust font size as needed */
+}
+
+/* Style the image in the right component */
+.right-image {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: 90%; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-left: 60px; /* Increase margin to push the image further */
+}

@@ -1,0 +1,111 @@
+/* DashboardPage.css */
+.dashboard-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.dashboard-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #20397a;
+}
+
+.dashboard-picklist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-picklist-container label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #20397a;
+}
+
+.dashboard-picklist {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+}
+
+.dashboard-crud-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.dashboard-crud-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #20397a;
+}
+
+.dashboard-crud-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.dashboard-crud-container button {
+    padding: 10px 20px;
+    background-color: #6459ca;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dashboard-crud-container button:hover {
+    background-color: #4a3b9a;
+}
+
+.dashboard-crud-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.dashboard-crud-table th, .dashboard-crud-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.dashboard-crud-table th {
+    background-color: #20397a;
+    color: white;
+}
+
+.dashboard-crud-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.dashboard-crud-table button {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}

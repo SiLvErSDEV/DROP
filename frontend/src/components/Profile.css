@@ -1,0 +1,73 @@
+/* Profile.css */
+
+.profile-page {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    height: calc(100vh - 40px); /* Incrementa la altura total del componente */
+}
+
+.decorative-image {
+    width: 30%; /* Aumenta el tamaño de la imagen decorativa */
+}
+
+.decorative-image img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-content {
+    width: 70%; /* Ajusta el ancho del contenido para dar espacio a la imagen más grande */
+    padding-left: 20px;
+    margin-top: 80px; /* Ajusta este valor según sea necesario para bajar más los textos */
+}
+
+.profile-header {
+    display: flex;
+    justify-content: flex-end; /* Alinea a la derecha */
+    margin-bottom: 30px; /* Aumenta el margen inferior */
+}
+
+.profile-header span {
+    font-size: 28px; /* Texto más grande */
+    font-weight: normal; /* Sin negrita */
+    margin-left: 20px; /* Ajusta este valor según sea necesario */
+}
+
+h2 {
+    font-size: 32px; /* Texto más grande */
+    font-weight: normal; /* Sin negrita */
+    margin-bottom: 30px; /* Aumenta el margen inferior */
+}
+
+.profile-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Aumenta el margen inferior */
+}
+
+.profile-links .left-link,
+.profile-links .right-link {
+    font-size: 28px; /* Texto más grande */
+    font-weight: normal; /* Sin negrita */
+}
+
+.loan-info {
+    background-color: #79a8e6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px; /* Texto más grande */
+    font-weight: normal; /* Sin negrita */
+    color: #0a1a44; /* Cambia el color del texto */
+}
+
+.loan-info p {
+    display: flex;
+    justify-content: space-between; /* Separa los elementos dentro del párrafo */
+    margin: 10px 0; /* Margen para separar los párrafos */
+}
+
+.loan-info span {
+    flex: 1; /* Permite que los elementos ocupen el espacio disponible */
+}

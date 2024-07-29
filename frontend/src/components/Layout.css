@@ -1,0 +1,51 @@
+/* Layout.css */
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: #20397a; /* Adjust background color */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around; /* Distribute nav items evenly */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: white; /* Adjust link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main content area */
+main {
+    margin-top: 60px; /* Adjust margin to account for fixed navbar height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Ensure consistent styling for the children components */
+main > * {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+/* Optional: Style for active link in the navbar */
+.nav-link.active {
+    border-bottom: 2px solid #fff; /* Highlight active link */
+}

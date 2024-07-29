@@ -1,0 +1,84 @@
+/* frontend/src/components/SecondMainPage.css */
+
+.second-mainpage {
+    background-color: white; /* White background for the second page */
+    padding: 50px; /* Add some padding */
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.second-mainpage h1 {
+    color: #3150c4; /* Title color */
+    font-size: 2em; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.second-mainpage p {
+    font-size: 1.2em; /* Adjust font size as needed */
+    color: #333; /* Darker color for the paragraph text */
+}
+
+.rectangle-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Space out rectangles */
+    margin-top: 30px; /* Space between the title and rectangles */
+}
+
+.rounded-rectangle-left,
+.rounded-rectangle-right {
+    border-radius: 15px; /* Round the corners */
+    padding: 20px;
+    width: 45%; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    position: relative; /* For absolute positioning of titles */
+}
+
+.rounded-rectangle-left {
+    background-color: #fdf7eb; /* Updated color for the left rectangle */
+}
+
+.rounded-rectangle-right {
+    background-color: #e3e5e7; /* Color for the right rectangle */
+}
+
+.rectangle-title {
+    color: #6459ca; /* Title color */
+    font-size: 1.5em; /* Slightly smaller than the main title */
+    margin: 0;
+    padding-bottom: 10px; /* Space between title and content */
+    font-weight: bold; /* Make the title bold */
+}
+
+.rectangle-content {
+    font-size: 1em; /* Content size, adjust as needed */
+    color: #6459ca; /* Updated content color */
+}
+
+.rounded-rectangle-right ul {
+    list-style-type: disc; /* Use disc bullets */
+    padding-left: 20px; /* Add space to the left */
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Adjust font size for bullet points */
+    color: #6459ca; /* Updated text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    height: 100%; /* Ensure it takes the full height of the rectangle */
+    width: 100%; /* Ensure it takes the full width of the rectangle */
+}
+
+.rounded-rectangle-right li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.captura-logo {
+    display: block; /* Ensure it displays as a block element */
+    margin: 20px auto; /* Center it horizontally and add spacing */
+    max-width: 50%; /* Make the image 50% of its original size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Round the corners */
+}

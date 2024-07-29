@@ -1,0 +1,123 @@
+/* frontend/src/pages/MainPage.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+    color: #333;
+}
+
+.main-content {
+    display: flex;
+    height: 60vh; /* Adjust height as needed */
+    padding: 20px;
+}
+
+.left-half, .right-half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 2em;
+    color: #3150c4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rectangle-group {
+    width: 100%;
+}
+
+.rounded-rectangle, .small-rectangle, .third-rectangle {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.rectangle-item {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.small-rectangle {
+    background-color: #23d366;
+    color: white;
+    cursor: pointer;
+}
+
+.third-rectangle {
+    background-color: #23d366;
+    color: white;
+    padding: 30px;
+}
+
+.second-mainpage {
+    padding: 20px;
+}
+
+.rectangle-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rounded-rectangle-left, .rounded-rectangle-right {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1;
+}
+
+.rectangle-title {
+    font-size: 1.5em;
+    color: #3150c4;
+    margin-bottom: 10px;
+}
+
+.rectangle-content {
+    font-size: 1em;
+    color: #333;
+}
+
+.captura-logo {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #3150c4;
+    text-align: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,80 @@
+.fifth-screen {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-color: white; /* Ensure the background is white */
+}
+
+.left-half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.right-half-fifth {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Ensure background is white */
+}
+
+.drop-logo {
+    max-width: 80%; /* Adjust as needed */
+    height: auto;   /* Maintain aspect ratio */
+}
+
+.fifth-screen-rectangle {
+    width: 80%; /* Adjust as needed */
+    height: 100px; /* Adjust height as needed */
+    margin: 10px 0; /* Space between rectangles */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Padding to ensure content is not too close to edges */
+    box-sizing: border-box; /* Include padding in width calculation */
+    color: black; /* Default text color */
+    text-align: left; /* Align text to the left */
+}
+
+.fifth-screen-rectangle-blue {
+    background-color: #3150c4;
+    color: white; /* Ensure text is white */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    font-size: 24px; /* Larger font size for visibility */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Open Sauce', sans-serif; /* Use Open Sauce font */
+}
+
+.fifth-screen-rectangle-light {
+    background-color: #d8e6ed;
+    color: black; /* Ensure text is black */
+}
+
+.fifth-screen-rectangle-title {
+    font-size: 24px; /* Adjust font size for title */
+    color: white; /* Title text color */
+    font-weight: bold;
+    text-align: left; /* Ensure title text is aligned to the left */
+}
+
+.fifth-screen-rectangle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fifth-screen-rectangle-heading {
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-align: left; /* Align heading text to the left */
+}
+
+.fifth-screen-rectangle-info {
+    font-size: 16px; /* Adjust font size as needed */
+    text-align: left; /* Align info text to the left */
+}

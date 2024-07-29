@@ -1,0 +1,105 @@
+/* frontend/src/components/FourthScreen.css */
+
+.fourth-screen {
+    background-color: white; /* White background */
+    padding: 50px; /* Add padding */
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 80vh; /* Increase height to 80% of the viewport height */
+    position: relative; /* Relative positioning for the rectangle */
+}
+
+.fourth-screen h1 {
+    color: #3150c4; /* Title color */
+    font-size: 3em; /* Larger font size */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.bottom-rectangle {
+    background-color: #79a8e6; /* Celeste color */
+    width: 100%; /* Full width */
+    height: 40%; /* Occupy 40% of the height of the component */
+    position: absolute; /* Absolute positioning to place it at the bottom */
+    bottom: 0; /* Align it to the bottom of the parent container */
+    left: 0; /* Align it to the left edge */
+    display: flex; /* Flexbox to arrange inner rectangles */
+    flex-direction: column; /* Stack inner sections vertically */
+}
+
+.bottom-rectangle .top-half {
+    display: flex; /* Flexbox to arrange the inner rectangles vertically */
+    width: 100%; /* Full width */
+    height: 50%; /* Half of the bottom rectangle height */
+}
+
+.color-section {
+    flex: 1; /* Distribute space equally among the sections */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    position: relative; /* Position relative for the circle */
+    color: white; /* Text color */
+    font-size: 2em; /* Adjust font size as needed */
+}
+
+.color-1 {
+    background-color: #20397a; /* First color */
+}
+
+.color-2 {
+    background-color: #3150c4; /* Second color */
+}
+
+.color-3 {
+    background-color: #6459ca; /* Third color */
+}
+
+.circle {
+    background-color: #48cec7; /* Circle color */
+    border-radius: 50%; /* Make it a circle */
+    width: 50px; /* Circle size */
+    height: 50px; /* Circle size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color inside circle */
+    font-size: 1.5em; /* Adjust as needed */
+    font-weight: bold; /* Bold text */
+    margin-right: 20px; /* Space between circle and text */
+}
+
+.color-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start */
+}
+
+.color-text span {
+    display: block; /* Ensure each part of the text is on a new line */
+    margin: 0; /* Remove default margin */
+    font-size: 1.4em;
+}
+
+.color-text .small {
+    font-size: 2em; /* Adjust font size */
+    line-height: 1.2; /* Adjust line height */
+}
+
+.bottom-half {
+    display: flex; /* Flexbox to arrange the inner rectangles horizontally */
+    width: 100%; /* Full width */
+    height: 50%; /* Half of the bottom rectangle height */
+    align-items: center; /* Center items vertically */
+    justify-content: space-around; /* Space out items evenly */
+}
+
+.bottom-text {
+    font-size: 1.5em; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    color: white; /* White text color */
+    flex: 1; /* Distribute space equally among the sections */
+}

@@ -1,0 +1,46 @@
+.success-page {
+    display: flex;
+    height: 100vh;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    align-items: flex-start; /* Alinea el contenedor general al inicio verticalmente */
+}
+
+.left-container {
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido al inicio del contenedor */
+}
+
+.right-container {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px; /* Mueve el texto un poco más a la derecha */
+}
+
+.main-title {
+    font-weight: bold;
+    color: black;
+    font-size: 3rem; /* Tamaño más grande */
+    margin-bottom: 1.5rem; /* Mayor espacio debajo del título */
+    line-height: 1.2;
+    margin-top: 50px; /* Ajusta el espacio superior para bajar el texto */
+}
+
+.subtitle {
+    color: black;
+    font-size: 2rem; /* Tamaño más grande para el subtítulo */
+    line-height: 1.5;
+    margin-top: 20px; /* Ajusta el espacio superior para bajar el texto */
+}
+
+.left-image {
+    max-width: 120%; /* Aumenta el tamaño de la imagen */
+    height: auto;
+}

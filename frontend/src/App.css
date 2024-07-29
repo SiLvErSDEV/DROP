@@ -1,0 +1,333 @@
+/* frontend/src/App.css */
+
+body {
+  background: linear-gradient(90deg, #20397a, #3150c4);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+}
+
+.navbar {
+  background: inherit; /* Use the same gradient as the body */
+  overflow: hidden;
+  padding: 0 20px; /* Add some padding to the sides */
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly */
+  flex: 1; /* Allow the navbar items to take up remaining space */
+}
+
+.nav-item {
+  flex: 1; /* Distribute space evenly among items */
+  text-align: center; /* Center the text */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 14px 20px;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 4px; /* Add some rounding to the hover effect */
+}
+
+.main-content {
+  display: flex;
+  justify-content: flex-start; /* Align content to the start (left) */
+  align-items: center; /* Center the logo vertically */
+  height: calc(100vh - 60px); /* Full height minus the navbar height */
+  position: relative; /* To control position of the second section */
+}
+
+.left-half {
+  width: 50%; /* Use half the width of the screen */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically within the left half */
+  align-items: center; /* Center items horizontally within the left half */
+}
+
+.main-logo {
+  width: 80%; /* Adjust as needed */
+}
+
+.logo-text {
+  color: white; /* Text color */
+  margin-top: 20px; /* Space between the logo and text */
+  text-align: center; /* Center text horizontally */
+  width: 80%; /* Same width as the logo */
+  font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.right-half {
+  width: 50%; /* Use half the width of the screen */
+  display: flex;
+  justify-content: center; /* Center content horizontally within the right half */
+  align-items: center; /* Center content vertically within the right half */
+  flex-direction: column; /* Stack rectangles vertically */
+}
+
+.rectangle-group {
+  display: flex;
+  flex-direction: column; /* Stack rectangles vertically */
+  align-items: center; /* Center rectangles horizontally */
+  gap: 20px; /* Space between the rectangles */
+}
+
+.rounded-rectangle {
+  background-color: white; /* Background color of the rectangle */
+  border-radius: 15px; /* Round the corners */
+  padding: 20px; /* Adjust padding */
+  width: 90%; /* Increase width to make it larger */
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: space-between; /* Distribute items evenly */
+  gap: 20px; /* Space between each column */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  flex-wrap: wrap; /* Allow items to wrap if needed */
+}
+
+.rectangle-item {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  gap: 5px; /* Space between label and input */
+  flex: 1; /* Allow each item to grow equally */
+  max-width: 30%; /* Control the maximum width of each item */
+}
+
+.rectangle-item span {
+  font-weight: 400; /* Make the label text regular weight */
+  font-size: 0.9em; /* Decrease font size */
+}
+
+.rectangle-item input {
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Round the corners */
+  padding: 10px;
+  background-color: #d8e6ed; /* Background color of the input field */
+  width: 100%; /* Make input take full width */
+}
+
+.small-rectangle {
+  background-color: white; /* Background color of the smaller rectangle */
+  border-radius: 10px; /* Round the corners */
+  padding: 15px;
+  width: 40%; /* Adjust the width of the smaller rectangle */
+  text-align: center; /* Center text inside the rectangle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.third-rectangle {
+  background-color: #23d366; /* Background color of the third rectangle */
+  border-radius: 10px; /* Round the corners */
+  padding: 15px;
+  width: 40%; /* Same width as the second rectangle */
+  text-align: center; /* Center text inside the rectangle */
+  color: white; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.second-mainpage {
+  background-color: white; /* White background for the second page */
+  padding: 50px; /* Add some padding */
+  text-align: center; /* Center text horizontally */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.second-mainpage h1 {
+  color: #3150c4; /* Title color */
+  font-size: 2em; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.second-mainpage p {
+  font-size: 1.2em; /* Adjust font size as needed */
+  color: #333; /* Darker color for the paragraph text */
+}
+
+.rectangle-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Space out rectangles */
+  margin-top: 30px; /* Space between the title and rectangles */
+}
+
+.rounded-rectangle-left,
+.rounded-rectangle-right {
+  border-radius: 15px; /* Round the corners */
+  padding: 20px;
+  width: 45%; /* Adjust width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  position: relative; /* For absolute positioning of titles */
+}
+
+.rounded-rectangle-left {
+  background-color: #fdf7eb; /* Updated color for the left rectangle */
+}
+
+.rounded-rectangle-right {
+  background-color: #e3e5e7; /* Color for the right rectangle */
+}
+
+.rectangle-title {
+  color: #6459ca; /* Title color */
+  font-size: 1.5em; /* Slightly smaller than the main title */
+  margin: 0;
+  padding-bottom: 10px; /* Space between title and content */
+  font-weight: bold; /* Make the title bold */
+}
+
+/* frontend/src/App.css */
+
+/* Existing styles */
+
+.rectangle-content {
+  font-size: 1em; /* Content size, adjust as needed */
+  color: #6459ca; /* Updated content color */
+}
+
+.second-mainpage p {
+  display: none; /* Hide the paragraph */
+}
+
+.captura-logo {
+  display: block; /* Ensure it displays as a block element */
+  margin: 20px auto; /* Center it horizontally and add spacing */
+  max-width: 50%; /* Make the image 50% of its original size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Round the corners */
+}
+
+.rounded-rectangle-left,
+.rounded-rectangle-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width/height */
+}
+
+.rounded-rectangle-left {
+  background-color: #fdf7eb; /* Background color */
+  height: auto; /* Let the height adjust based on content */
+}
+
+.rounded-rectangle-right {
+  background-color: #e3e5e7; /* Background color */
+  height: auto; /* Let the height adjust based on content */
+}
+
+/* Title styles */
+.rectangle-title {
+  font-size: 1.5em; /* Larger font size for the title */
+  color: #6459ca; /* Title color */
+  margin-bottom: 10px; /* Space between title and content */
+}
+
+/* Content styles */
+.rectangle-content {
+  font-size: 1.2em; /* Larger font size for content */
+  color: #6459ca; /* Updated content color */
+}
+
+/* Adjust styles for the unordered list in the right rectangle */
+.rounded-rectangle-right ul {
+  list-style-type: disc; /* Use disc bullets */
+  padding-left: 20px; /* Add space to the left */
+  margin: 0; /* Remove default margin */
+  font-size: 1.2em; /* Adjust font size for bullet points */
+  color: #6459ca; /* Updated text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  height: 100%; /* Ensure it takes the full height of the rectangle */
+  width: 100%; /* Ensure it takes the full width of the rectangle */
+}
+
+.rounded-rectangle-right li {
+  margin-bottom: 10px; /* Space between list items */
+}
+.captura-logo {
+  display: block; /* Ensure it displays as a block element */
+  margin: 20px auto; /* Center it horizontally and add spacing */
+  max-width: 50%; /* Make the image 50% of its original size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Round the corners */
+}
+
+/* Ensure the left rectangle adjusts to fit the image size */
+.rounded-rectangle-left,
+.rounded-rectangle-right {
+  background-color: #e3e5e7; /* Background color */
+  height: auto; /* Let the height adjust based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width/height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.rounded-rectangle-left {
+  background-color: #fdf7eb; /* Background color */
+  height: auto; /* Let the height adjust based on content */
+}
+
+.rounded-rectangle-right {
+  background-color: #e3e5e7; /* Background color */
+  height: auto; /* Let the height adjust based on content */
+}
+
+/* Title styles */
+.rectangle-title {
+  font-size: 1.5em; /* Larger font size for the title */
+  color: #6459ca; /* Title color */
+  margin-bottom: 10px; /* Space between title and content */
+}
+
+/* Content styles */
+.rectangle-content {
+  font-size: 1.2em; /* Larger font size for content */
+  color: #6459ca; /* Updated content color */
+}
+
+/* frontend/src/App.css */
+
+.third-screen {
+  background-color: white; /* White background for the third screen */
+  padding: 50px; /* Add some padding */
+  text-align: center; /* Center text horizontally */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.third-screen h1 {
+  color: #3150c4; /* Title color */
+  font-size: 2em; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.third-screen p {
+  font-size: 1.2em; /* Adjust font size as needed */
+  color: #333; /* Darker color for the paragraph text */
+}
+
+
